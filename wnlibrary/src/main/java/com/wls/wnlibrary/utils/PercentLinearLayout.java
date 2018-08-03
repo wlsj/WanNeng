@@ -1,4 +1,4 @@
-package ui;
+package com.wls.wnlibrary.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
