@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 public class PercentLinearLayout extends LinearLayout {
-
+    /**
+     * 百分比布局线性
+     **/
     private PercentLayoutHelper mPercentLayoutHelper;
 
     public PercentLinearLayout(Context context, AttributeSet attrs)
