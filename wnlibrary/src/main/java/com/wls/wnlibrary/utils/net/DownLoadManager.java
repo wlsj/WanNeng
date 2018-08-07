@@ -1,11 +1,9 @@
-package net;
+package com.wls.wnlibrary.utils.net;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import android.view.View;
 
 import java.io.File;
 import java.io.FileOutputStream;

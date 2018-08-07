@@ -1,4 +1,4 @@
-package net;
+package com.wls.wnlibrary.utils.net;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package net;
+package com.wls.wnlibrary.utils.net;
 
 
 public abstract class CallBack {

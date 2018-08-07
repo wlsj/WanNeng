@@ -1,4 +1,4 @@
-package net;
+package com.wls.wnlibrary.utils.net;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

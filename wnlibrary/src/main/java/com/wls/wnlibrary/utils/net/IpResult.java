@@ -1,4 +1,4 @@
-package net;
+package com.wls.wnlibrary.utils.net;
 
 /**
  * Created by Tamic on 2016-06-03.

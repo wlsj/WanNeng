@@ -1,4 +1,4 @@
-package net;
+package com.wls.wnlibrary.utils.net;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -17,7 +17,6 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.Body;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
