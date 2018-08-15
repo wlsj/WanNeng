@@ -4,7 +4,7 @@ package com.wls.wnlibrary.utils.net.request;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.wls.wnlibrary.utils.net.EasyHttp;
+import com.wls.wnlibrary.utils.net.HttpQingQiu;
 import com.wls.wnlibrary.utils.net.api.ApiService;
 import com.wls.wnlibrary.utils.net.cache.RxCache;
 import com.wls.wnlibrary.utils.net.cache.converter.IDiskConverter;
@@ -87,8 +87,8 @@ public abstract class BaseRequest<R extends BaseRequest> {
 
     public BaseRequest(String url) {
         this.url = url;
-        context = EasyHttp.getContext();
-        EasyHttp config = EasyHttp.getInstance();
+        context = HttpQingQiu.getContext();
+        HttpQingQiu config = HttpQingQiu.getInstance();
         this.baseUrl = config.getBaseUrl();
         if (!TextUtils.isEmpty(this.baseUrl))
             httpUrl = HttpUrl.parse(baseUrl);
@@ -146,7 +146,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
     }
 
     public R cacheTime(long cacheTime) {
-        if (cacheTime <= -1) cacheTime = EasyHttp.DEFAULT_CACHE_NEVER_EXPIRE;
+        if (cacheTime <= -1) cacheTime = HttpQingQiu.DEFAULT_CACHE_NEVER_EXPIRE;
         this.cacheTime = cacheTime;
         return (R) this;
     }
@@ -339,7 +339,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
      * 移除缓存（key）
      */
     public void removeCache(String key) {
-        EasyHttp.getRxCache().remove(key).compose(RxUtil.<Boolean>io_main())
+        HttpQingQiu.getRxCache().remove(key).compose(RxUtil.<Boolean>io_main())
                 .subscribe(new Consumer<Boolean>() {
                     @Override
                     public void accept(@NonNull Boolean aBoolean) throws Exception {
@@ -359,7 +359,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
     private OkHttpClient.Builder generateOkClient() {
         if (readTimeOut <= 0 && writeTimeOut <= 0 && connectTimeout <= 0 && sslParams == null
                 && cookies.size() == 0 && hostnameVerifier == null && proxy == null && headers.isEmpty()) {
-            OkHttpClient.Builder builder = EasyHttp.getOkHttpClientBuilder();
+            OkHttpClient.Builder builder = HttpQingQiu.getOkHttpClientBuilder();
             for (Interceptor interceptor : builder.interceptors()) {
                 if (interceptor instanceof BaseDynamicInterceptor) {
                     ((BaseDynamicInterceptor) interceptor).sign(sign).timeStamp(timeStamp).accessToken(accessToken);
@@ -367,7 +367,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
             }
             return builder;
         } else {
-            final OkHttpClient.Builder newClientBuilder = EasyHttp.getOkHttpClient().newBuilder();
+            final OkHttpClient.Builder newClientBuilder = HttpQingQiu.getOkHttpClient().newBuilder();
             if (readTimeOut > 0)
                 newClientBuilder.readTimeout(readTimeOut, TimeUnit.MILLISECONDS);
             if (writeTimeOut > 0)
@@ -378,7 +378,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
             if (sslParams != null)
                 newClientBuilder.sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager);
             if (proxy != null) newClientBuilder.proxy(proxy);
-            if (cookies.size() > 0) EasyHttp.getCookieJar().addCookies(cookies);
+            if (cookies.size() > 0) HttpQingQiu.getCookieJar().addCookies(cookies);
 
             //添加头  头添加放在最前面方便其他拦截器可能会用到
             newClientBuilder.addInterceptor(new HeadersInterceptor(headers));
@@ -408,7 +408,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
      */
     private Retrofit.Builder generateRetrofit() {
         if (converterFactories.isEmpty() && adapterFactories.isEmpty()) {
-            return EasyHttp.getRetrofitBuilder().baseUrl(baseUrl);
+            return HttpQingQiu.getRetrofitBuilder().baseUrl(baseUrl);
         } else {
             final Retrofit.Builder retrofitBuilder = new Retrofit.Builder().baseUrl(baseUrl);
             if (!converterFactories.isEmpty()) {
@@ -417,7 +417,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
                 }
             } else {
                 //获取全局的对象重新设置
-                Retrofit.Builder newBuilder = EasyHttp.getRetrofitBuilder();
+                Retrofit.Builder newBuilder = HttpQingQiu.getRetrofitBuilder();
                 List<Converter.Factory> listConverterFactory = newBuilder.baseUrl(baseUrl).build().converterFactories();
                 for (Converter.Factory factory : listConverterFactory) {
                     retrofitBuilder.addConverterFactory(factory);
@@ -429,7 +429,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
                 }
             } else {
                 //获取全局的对象重新设置
-                Retrofit.Builder newBuilder = EasyHttp.getRetrofitBuilder();
+                Retrofit.Builder newBuilder = HttpQingQiu.getRetrofitBuilder();
                 List<CallAdapter.Factory> listAdapterFactory = newBuilder.baseUrl(baseUrl).build().callAdapterFactories();
                 for (CallAdapter.Factory factory : listAdapterFactory) {
                     retrofitBuilder.addCallAdapterFactory(factory);
@@ -443,7 +443,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
      * 根据当前的请求参数，生成对应的RxCache和Cache
      */
     private RxCache.Builder generateRxCache() {
-        final RxCache.Builder rxCacheBuilder = EasyHttp.getRxCacheBuilder();
+        final RxCache.Builder rxCacheBuilder = HttpQingQiu.getRxCacheBuilder();
         switch (cacheMode) {
             case NO_CACHE://不使用缓存
                 final NoCacheInterceptor NOCACHEINTERCEPTOR = new NoCacheInterceptor();
@@ -452,19 +452,19 @@ public abstract class BaseRequest<R extends BaseRequest> {
                 break;
             case DEFAULT://使用Okhttp的缓存
                 if (this.cache == null) {
-                    File cacheDirectory = EasyHttp.getCacheDirectory();
+                    File cacheDirectory = HttpQingQiu.getCacheDirectory();
                     if (cacheDirectory == null) {
-                        cacheDirectory = new File(EasyHttp.getContext().getCacheDir(), "okhttp-cache");
+                        cacheDirectory = new File(HttpQingQiu.getContext().getCacheDir(), "okhttp-cache");
                     } else {
                         if (cacheDirectory.isDirectory() && !cacheDirectory.exists()) {
                             cacheDirectory.mkdirs();
                         }
                     }
-                    this.cache = new Cache(cacheDirectory, Math.max(5 * 1024 * 1024, EasyHttp.getCacheMaxSize()));
+                    this.cache = new Cache(cacheDirectory, Math.max(5 * 1024 * 1024, HttpQingQiu.getCacheMaxSize()));
                 }
                 String cacheControlValue = String.format("max-age=%d", Math.max(-1, cacheTime));
-                final CacheInterceptor REWRITE_CACHE_CONTROL_INTERCEPTOR = new CacheInterceptor(EasyHttp.getContext(), cacheControlValue);
-                final CacheInterceptorOffline REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE = new CacheInterceptorOffline(EasyHttp.getContext(), cacheControlValue);
+                final CacheInterceptor REWRITE_CACHE_CONTROL_INTERCEPTOR = new CacheInterceptor(HttpQingQiu.getContext(), cacheControlValue);
+                final CacheInterceptorOffline REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE = new CacheInterceptorOffline(HttpQingQiu.getContext(), cacheControlValue);
                 networkInterceptors.add(REWRITE_CACHE_CONTROL_INTERCEPTOR);
                 networkInterceptors.add(REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE);
                 interceptors.add(REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE);
@@ -482,7 +482,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
                             .cacheTime(cacheTime);
                     return tempRxCacheBuilder;
                 } else {
-                    final RxCache.Builder cacheBuilder = EasyHttp.getRxCache().newBuilder();
+                    final RxCache.Builder cacheBuilder = HttpQingQiu.getRxCache().newBuilder();
                     cacheBuilder.diskConverter(diskConverter)
                             .cachekey(Utils.checkNotNull(cacheKey, "cacheKey == null"))
                             .cacheTime(cacheTime);

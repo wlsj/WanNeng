@@ -23,18 +23,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BaseRequest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/BaseRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="7155">
-              <caret line="479" column="57" lean-forward="true" selection-start-line="479" selection-start-column="57" selection-end-line="479" selection-end-column="57" />
+              <caret line="479" column="57" lean-forward="false" selection-start-line="479" selection-start-column="57" selection-end-line="479" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11121#11130#0" expanded="true" />
-                <element signature="e#11168#11409#0" expanded="true" />
-                <element signature="e#11408#11409#0" expanded="true" />
-                <element signature="e#11411#11665#0" expanded="true" />
-                <element signature="e#11664#11665#0" expanded="true" />
+                <element signature="e#11139#11148#0" expanded="true" />
+                <element signature="e#11186#11427#0" expanded="true" />
+                <element signature="e#11426#11427#0" expanded="true" />
+                <element signature="e#11429#11683#0" expanded="true" />
+                <element signature="e#11682#11683#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,19 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasyHttp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/EasyHttp.java">
+      <file leaf-file-name="HttpQingQiu.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/HttpQingQiu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-427">
-              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="163">
+              <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5444#5445#0" expanded="true" />
-                <element signature="e#5503#5504#0" expanded="true" />
-                <element signature="e#5775#5776#0" expanded="true" />
-                <element signature="e#5827#5828#0" expanded="true" />
-                <element signature="e#5926#5927#0" expanded="true" />
-                <element signature="e#5977#5978#0" expanded="true" />
+                <element signature="e#4865#4866#0" expanded="true" />
+                <element signature="e#4895#4896#0" expanded="true" />
+                <element signature="e#5363#5364#0" expanded="true" />
+                <element signature="e#5423#5424#0" expanded="true" />
+                <element signature="e#5465#5466#0" expanded="true" />
+                <element signature="e#5524#5525#0" expanded="true" />
+                <element signature="e#5796#5797#0" expanded="true" />
+                <element signature="e#5848#5849#0" expanded="true" />
+                <element signature="e#5947#5948#0" expanded="true" />
+                <element signature="e#5998#5999#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3273,7 +3277,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/cache/stategy/OnlyRemoteStrategy.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/callback/CallBack.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/cache/stategy/OnlyCacheStrategy.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/callback/CallBackProxy.java" />
@@ -3310,7 +3313,6 @@
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/CustomRequest.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/DeleteRequest.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/DownloadRequest.java" />
-        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/EasyHttp.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/utils/Utils.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/utils/HttpUtil.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/utils/HttpLog.java" />
@@ -3324,6 +3326,8 @@
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/subsciber/DownloadSubscriber.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/utils/RxUtil.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/BaseRequest.java" />
+        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/EasyHttp.java" />
+        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/HttpQingQiu.java" />
       </list>
     </option>
   </component>
@@ -3730,6 +3734,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2641357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -3741,7 +3746,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -4211,33 +4215,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/EasyHttp.java">
+    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/BaseRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="7155">
+          <caret line="479" column="57" lean-forward="false" selection-start-line="479" selection-start-column="57" selection-end-line="479" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5444#5445#0" expanded="true" />
-            <element signature="e#5503#5504#0" expanded="true" />
-            <element signature="e#5775#5776#0" expanded="true" />
-            <element signature="e#5827#5828#0" expanded="true" />
-            <element signature="e#5926#5927#0" expanded="true" />
-            <element signature="e#5977#5978#0" expanded="true" />
+            <element signature="e#11139#11148#0" expanded="true" />
+            <element signature="e#11186#11427#0" expanded="true" />
+            <element signature="e#11426#11427#0" expanded="true" />
+            <element signature="e#11429#11683#0" expanded="true" />
+            <element signature="e#11682#11683#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/request/BaseRequest.java">
+    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/net/HttpQingQiu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7155">
-          <caret line="479" column="57" lean-forward="true" selection-start-line="479" selection-start-column="57" selection-end-line="479" selection-end-column="57" />
+        <state relative-caret-position="163">
+          <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11121#11130#0" expanded="true" />
-            <element signature="e#11168#11409#0" expanded="true" />
-            <element signature="e#11408#11409#0" expanded="true" />
-            <element signature="e#11411#11665#0" expanded="true" />
-            <element signature="e#11664#11665#0" expanded="true" />
+            <element signature="e#4865#4866#0" expanded="true" />
+            <element signature="e#4895#4896#0" expanded="true" />
+            <element signature="e#5363#5364#0" expanded="true" />
+            <element signature="e#5423#5424#0" expanded="true" />
+            <element signature="e#5465#5466#0" expanded="true" />
+            <element signature="e#5524#5525#0" expanded="true" />
+            <element signature="e#5796#5797#0" expanded="true" />
+            <element signature="e#5848#5849#0" expanded="true" />
+            <element signature="e#5947#5948#0" expanded="true" />
+            <element signature="e#5998#5999#0" expanded="true" />
           </folding>
         </state>
       </provider>
