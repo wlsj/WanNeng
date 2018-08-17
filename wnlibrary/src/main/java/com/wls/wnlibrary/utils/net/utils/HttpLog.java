@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 public class HttpLog {
-    public static String customTagPrefix = "RxEasyHttp_";
+    public static String customTagPrefix = "老王提示";
 
     private HttpLog() {
     }
