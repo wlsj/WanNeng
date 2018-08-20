@@ -21,11 +21,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class BottomBar extends View {
+public class DiBuDaoHang extends View {
 
     private Context context;
 
-    public BottomBar(Context context, @Nullable AttributeSet attrs) {
+    public DiBuDaoHang(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
     }
@@ -62,38 +62,38 @@ public class BottomBar extends View {
     private int iconHeight = 20;
     private int titleIconMargin = 5;
 
-    public BottomBar setContainer(int containerId) {
+    public DiBuDaoHang setContainer(int containerId) {
         this.containerId = containerId;
         return this;
     }
 
-    public BottomBar setTitleBeforeAndAfterColor(String beforeResCode, String AfterResCode) {//支持"#333333"这种形式
+    public DiBuDaoHang setTitleBeforeAndAfterColor(String beforeResCode, String AfterResCode) {//支持"#333333"这种形式
         titleColorBefore = Color.parseColor(beforeResCode);
         titleColorAfter = Color.parseColor(AfterResCode);
         return this;
     }
 
-    public BottomBar setTitleSize(int titleSizeInDp) {
+    public DiBuDaoHang setTitleSize(int titleSizeInDp) {
         this.titleSizeInDp = titleSizeInDp;
         return this;
     }
 
-    public BottomBar setIconWidth(int iconWidth) {
+    public DiBuDaoHang setIconWidth(int iconWidth) {
         this.iconWidth = iconWidth;
         return this;
     }
 
-    public BottomBar setTitleIconMargin(int titleIconMargin) {
+    public DiBuDaoHang setTitleIconMargin(int titleIconMargin) {
         this.titleIconMargin = titleIconMargin;
         return this;
     }
 
-    public BottomBar setIconHeight(int iconHeight) {
+    public DiBuDaoHang setIconHeight(int iconHeight) {
         this.iconHeight = iconHeight;
         return this;
     }
 
-    public BottomBar addItem(Class fragmentClass, String title, int iconResBefore, int iconResAfter) {
+    public DiBuDaoHang addItem(Class fragmentClass, String title, int iconResBefore, int iconResAfter) {
         fragmentClassList.add(fragmentClass);
         titleList.add(title);
         iconResBeforeList.add(iconResBefore);
@@ -101,7 +101,7 @@ public class BottomBar extends View {
         return this;
     }
 
-    public BottomBar setFirstChecked(int firstCheckedIndex) {//从0开始
+    public DiBuDaoHang setFirstChecked(int firstCheckedIndex) {//从0开始
         this.firstCheckedIndex = firstCheckedIndex;
         return this;
     }
