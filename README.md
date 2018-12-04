@@ -2,7 +2,8 @@
 慢慢更新，API会一直有变动，直到稳定版，其中诸多参考借鉴，望使用的同时提出建议意见。
 1、依赖
 只针对于AS的玩家，别的idea的玩家可以下载源码
-首先在工程的gradle的allprojects当中添加maven之后添加url'https://jitpack.io'
+首先在工程的gradle的allprojects当中添加maven之后添加
+url'https://jitpack.io'
 
 allprojects {
     repositories {
@@ -13,7 +14,9 @@ allprojects {
         }
     }
 }
-然后在Module的gradle的dependencies中添加implementation 'com.github.wlsj:WanNeng:1.2.3'
+
+然后在Module的gradle的dependencies中添加
+implementation 'com.github.wlsj:WanNeng:1.2.3'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
