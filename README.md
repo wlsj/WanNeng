@@ -4,7 +4,7 @@
 只针对于AS的玩家，别的idea的玩家可以下载源码
 首先在工程的gradle的allprojects当中添加maven之后添加
 url'https://jitpack.io'
-
+```
 allprojects {
     repositories {
         google()
@@ -14,10 +14,10 @@ allprojects {
         }
     }
 }
-
+```
 然后在Module的gradle的dependencies中添加
 implementation 'com.github.wlsj:WanNeng:1.2.3'
-
+```
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -27,12 +27,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.wlsj:WanNeng:1.2.3'
 }
-
+```
 这时候可能有V7包的冲突，可以忽略
 
 ## 网络请求
 需要在application初始化HttpQingQiu.init(this);
-
+```
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
@@ -40,13 +40,13 @@ public class MyApplication extends Application {
         HttpQingQiu.init(this);
     }
 }
-
+```
 然后在类或者接口中发起请求
 要先设置baseURL，就是主域名
 HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
 
 ### get请求
-
+```
   HttpQingQiu.get("/openapi.do?keyfrom=MyFristBlog&key=1985316716&type=data&doctype=json&version=1.1&q=买了否冷").execute(new SimpleCallBack<String>() {
             @Override
             public void onError(ApiException e) {
@@ -58,9 +58,9 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
                 //回调成功的类
             }
         });
-
+```
 ### post请求，参数以K_V的形式添加
-
+```
   HttpQingQiu.post("/openapi.do")
                 .params("keyfrom", "MyFristBlog")
                 .params("key", "1985316716")
@@ -89,6 +89,7 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
                         Log.e("TAG", "onSuccess: " + s);
                     }
                 });
+                ```
 ## 解析
 
                 Entity entity = JsonJieXi.GsonToBean(s, Entity.class);、//s为获取到的字符串，Entity是实体类
