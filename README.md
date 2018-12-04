@@ -89,7 +89,8 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
                         Log.e("TAG", "onSuccess: " + s);
                     }
                 });
-                ```
+```
 ## 解析
 
-                Entity entity = JsonJieXi.GsonToBean(s, Entity.class);、//s为获取到的字符串，Entity是实体类
+                Entity entity = JsonJieXi.GsonToBean(s, Entity.class);
+                //s为获取到的字符串，Entity是实体类
