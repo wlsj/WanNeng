@@ -30,7 +30,7 @@ dependencies {
 
 这时候可能有V7包的冲突，可以忽略
 
-##网络请求
+## 网络请求
 需要在application初始化HttpQingQiu.init(this);
 
 public class MyApplication extends Application {
@@ -45,7 +45,7 @@ public class MyApplication extends Application {
 要先设置baseURL，就是主域名
 HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
 
-###get请求
+### get请求
 
   HttpQingQiu.get("/openapi.do?keyfrom=MyFristBlog&key=1985316716&type=data&doctype=json&version=1.1&q=买了否冷").execute(new SimpleCallBack<String>() {
             @Override
@@ -59,7 +59,7 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
             }
         });
 
-###post请求，参数以K_V的形式添加
+### post请求，参数以K_V的形式添加
 
   HttpQingQiu.post("/openapi.do")
                 .params("keyfrom", "MyFristBlog")
@@ -89,6 +89,6 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
                         Log.e("TAG", "onSuccess: " + s);
                     }
                 });
-##解析
+## 解析
 
                 Entity entity = JsonJieXi.GsonToBean(s, Entity.class);、//s为获取到的字符串，Entity是实体类
