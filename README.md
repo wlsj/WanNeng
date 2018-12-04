@@ -1,6 +1,6 @@
 # WanNeng 
 慢慢更新，API会一直有变动，直到稳定版，其中诸多参考借鉴，望使用的同时提出建议意见。
-1、依赖
+##依赖
 只针对于AS的玩家，别的idea的玩家可以下载源码
 首先在工程的gradle的allprojects当中添加maven之后添加
 url'https://jitpack.io'
@@ -30,7 +30,7 @@ dependencies {
 
 这时候可能有V7包的冲突，可以忽略
 
-2、网络请求
+##网络请求
 需要在application初始化HttpQingQiu.init(this);
 
 public class MyApplication extends Application {
@@ -45,7 +45,7 @@ public class MyApplication extends Application {
 要先设置baseURL，就是主域名
 HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
 
-get请求
+###get请求
 
   HttpQingQiu.get("/openapi.do?keyfrom=MyFristBlog&key=1985316716&type=data&doctype=json&version=1.1&q=买了否冷").execute(new SimpleCallBack<String>() {
             @Override
@@ -59,7 +59,7 @@ get请求
             }
         });
 
-post请求，参数以K_V的形式添加
+###post请求，参数以K_V的形式添加
 
   HttpQingQiu.post("/openapi.do")
                 .params("keyfrom", "MyFristBlog")
@@ -89,6 +89,6 @@ post请求，参数以K_V的形式添加
                         Log.e("TAG", "onSuccess: " + s);
                     }
                 });
-3、解析
+##解析
 
                 Entity entity = JsonJieXi.GsonToBean(s, Entity.class);、//s为获取到的字符串，Entity是实体类
