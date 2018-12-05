@@ -94,3 +94,57 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
 
                 Entity entity = JsonJieXi.GsonToBean(s, Entity.class);
                 //s为获取到的字符串，Entity是实体类
+
+## 底部导航栏
+               
+### 布局内添加
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myRoot"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+    </FrameLayout>
+
+    <com.wls.wnlibrary.utils.DiBuDaoHang
+        android:id="@+id/dibudaohang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        />
+</LinearLayout>
+
+```
+### 类中使用
+
+```
+ wlsDiBuDaoHang  = findViewById(R.id.dibudaohang);
+        wlsDiBuDaoHang.setContainer(R.id.fl_container)
+                .setTitleBeforeAndAfterColor("#333333", "#444444")
+                .addItem(Fragment1.class,
+                        "首页",R.mipmap.ic_launcher,
+                        R.mipmap.ic_launcher_round)
+                .addItem(Fragment2.class,
+                        "次页",
+                        R.mipmap.ic_launcher,
+                        R.mipmap.ic_launcher_round)
+                .addItem(Fragment3.class,
+                        "三页",
+                        R.mipmap.ic_launcher,
+                        R.mipmap.ic_launcher_round)
+                .addItem(Fragment4.class,
+                        "四页",
+                        R.mipmap.ic_launcher,
+                        R.mipmap.ic_launcher_round)
+                .build();
+```
