@@ -54,8 +54,8 @@
       <file leaf-file-name="DiBuDaoHang.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="1140">
+              <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -139,6 +139,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setContainer</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -3275,6 +3280,7 @@
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/GlideUtils.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/wnlibrary/build.gradle" />
+        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java" />
       </list>
     </option>
   </component>
@@ -3817,8 +3823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="1140">
+          <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
           <folding />
         </state>
       </provider>

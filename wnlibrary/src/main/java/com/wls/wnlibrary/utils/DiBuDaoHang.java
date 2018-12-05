@@ -62,38 +62,38 @@ public class DiBuDaoHang extends View {
     private int iconHeight = 20;
     private int titleIconMargin = 5;
 
-    public DiBuDaoHang setContainer(int containerId) {
+    public DiBuDaoHang setNeiRong(int containerId) {
         this.containerId = containerId;
         return this;
     }
 
-    public DiBuDaoHang setTitleBeforeAndAfterColor(String beforeResCode, String AfterResCode) {//支持"#333333"这种形式
+    public DiBuDaoHang setBiaoTiKaiShiHeDianJiHouDeYanSe(String beforeResCode, String AfterResCode) {//支持"#333333"这种形式
         titleColorBefore = Color.parseColor(beforeResCode);
         titleColorAfter = Color.parseColor(AfterResCode);
         return this;
     }
 
-    public DiBuDaoHang setTitleSize(int titleSizeInDp) {
+    public DiBuDaoHang setBiaoTiDaXiao(int titleSizeInDp) {
         this.titleSizeInDp = titleSizeInDp;
         return this;
     }
 
-    public DiBuDaoHang setIconWidth(int iconWidth) {
+    public DiBuDaoHang setTuBiaoKuanDu(int iconWidth) {
         this.iconWidth = iconWidth;
         return this;
     }
 
-    public DiBuDaoHang setTitleIconMargin(int titleIconMargin) {
+    public DiBuDaoHang setBiaoTiTuBiaoJianJu(int titleIconMargin) {
         this.titleIconMargin = titleIconMargin;
         return this;
     }
 
-    public DiBuDaoHang setIconHeight(int iconHeight) {
+    public DiBuDaoHang setTuBiaoGaoDu(int iconHeight) {
         this.iconHeight = iconHeight;
         return this;
     }
 
-    public DiBuDaoHang addItem(Class fragmentClass, String title, int iconResBefore, int iconResAfter) {
+    public DiBuDaoHang addYiGe(Class fragmentClass, String title, int iconResBefore, int iconResAfter) {
         fragmentClassList.add(fragmentClass);
         titleList.add(title);
         iconResBeforeList.add(iconResBefore);
