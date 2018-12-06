@@ -128,23 +128,18 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
 ### 类中使用
 
 ```
- wlsDiBuDaoHang  = findViewById(R.id.dibudaohang);
-        wlsDiBuDaoHang.setContainer(R.id.fl_container)
-                .setTitleBeforeAndAfterColor("#333333", "#444444")
-                .addItem(Fragment1.class,
-                        "首页",R.mipmap.ic_launcher,
-                        R.mipmap.ic_launcher_round)
-                .addItem(Fragment2.class,
-                        "次页",
-                        R.mipmap.ic_launcher,
-                        R.mipmap.ic_launcher_round)
-                .addItem(Fragment3.class,
-                        "三页",
-                        R.mipmap.ic_launcher,
-                        R.mipmap.ic_launcher_round)
-                .addItem(Fragment4.class,
-                        "四页",
-                        R.mipmap.ic_launcher,
-                        R.mipmap.ic_launcher_round)
-                .build();
+private DiBuDaoHang diBuDaoHang;
+
+diBuDaoHang = findViewById(R.id.dibu_daohang);
+
+diBuDaoHang.setNeiRong(R.id.neirong)
+        .setBiaoTiKaiShiHeDianJiHouDeYanSe("#FFFF4431","#452565")
+        .addYiGe(BlankFragment.class,"首页",R.mipmap.ic_launcher_round,R.mipmap.ic_launcher)
+        .addYiGe(BlankFragment2.class,"贷款",R.mipmap.ic_launcher_round,R.mipmap.ic_launcher)
+        .addYiGe(BlankFragment3.class,"还款",R.mipmap.ic_launcher_round,R.mipmap.ic_launcher)
+        .addYiGe(BlankFragment4.class,"我的",R.mipmap.ic_launcher_round,R.mipmap.ic_launcher)
+        .build();
 ```
+
+## 图片加载
+

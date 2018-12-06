@@ -54,8 +54,8 @@
       <file leaf-file-name="DiBuDaoHang.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+            <state relative-caret-position="-873">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -3284,7 +3284,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="43" />
     <option name="width" value="1280" />
     <option name="height" value="728" />
@@ -3528,7 +3528,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="43" width="1280" height="728" extended-state="0" />
+    <frame x="0" y="43" width="1280" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3823,8 +3823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+        <state relative-caret-position="-873">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
