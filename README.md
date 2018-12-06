@@ -148,7 +148,7 @@ private ImageView imageView;
 imageView = findViewById(R.id.iv_mian2);
 
 String url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544085757843&di=5588db72a553cc7eaf4a7019e2a7d498&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20180621%2F3496efefa4e647719e68b63b39d94275.jpeg";
-
+//参数为：上下文、占位图、加载错误图、是否缓存、自己的view
 TuPianJiaZai.JiaZaiTuPian(this,url,R.mipmap.ic_launcher,R.mipmap.ic_launcher,false,imageView);
 
 ```
