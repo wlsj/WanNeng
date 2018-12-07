@@ -152,3 +152,11 @@ String url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&se
 TuPianJiaZai.JiaZaiTuPian(this,url,R.mipmap.ic_launcher,R.mipmap.ic_launcher,false,imageView);
 
 ```
+## 图片处理（占坑）
+
+```
+Bitmap bitmap = TuPianChuLiJianBan.转为BitMap(imageView);
+Bitmap bimap2 = TuPianChuLiJianBan.图片模糊处理(bitmap, 2.2f, this);
+imageView.setImageBitmap(bimap2);
+
+```
