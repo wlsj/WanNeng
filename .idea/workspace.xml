@@ -41,16 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/BaseFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DiBuDaoHang.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TuPianJiaZai.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TuPianJiaZai.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianJiaZai.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -126,9 +116,21 @@
       <file leaf-file-name="TuPianChuLi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            <state relative-caret-position="323">
+              <caret line="481" column="40" lean-forward="false" selection-start-line="481" selection-start-column="28" selection-end-line="481" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TuPianChuLiJianBan.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLiJianBan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3792">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,6 +147,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>setContainer</find>
+      <find>clip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -3284,10 +3287,12 @@
         <option value="$PROJECT_DIR$/wnlibrary/build.gradle" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/DiBuDaoHang.java" />
         <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianJiaZai.java" />
+        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLi.java" />
+        <option value="$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLiJianBan.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="728" />
@@ -3524,7 +3529,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="728" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3541,7 +3547,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3819,14 +3825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/BaseFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -3843,26 +3841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/QuanXian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/WlsjSwipeRefreshLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -3891,10 +3873,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianJiaZai.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/QuanXian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="481" column="40" lean-forward="false" selection-start-line="481" selection-start-column="28" selection-end-line="481" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wnlibrary/src/main/java/com/wls/wnlibrary/utils/TuPianChuLiJianBan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3792">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
