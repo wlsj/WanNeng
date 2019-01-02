@@ -1,4 +1,4 @@
-package com.wls.wnlibrary.utils;
+package com.wls.wnlibrary.utils.ui;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;

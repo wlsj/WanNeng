@@ -1,4 +1,4 @@
-package com.wls.wnlibrary.utils;
+package com.wls.wnlibrary.utils.base;
 
 import android.app.Activity;
 import android.os.Bundle;

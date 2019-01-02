@@ -1,4 +1,4 @@
-package com.wls.wnlibrary.utils;
+package com.wls.wnlibrary.utils.pic;
 
 /*
  *

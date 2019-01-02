@@ -116,7 +116,7 @@ HttpQingQiu.getInstance().setBaseUrl("http://fanyi.youdao.com");
         android:layout_weight="0.9">
     </FrameLayout>
 
-    <com.wls.wnlibrary.utils.DiBuDaoHang
+    <com.wls.wnlibrary.utils.ui.DiBuDaoHang
         android:id="@+id/dibudaohang"
         android:layout_width="match_parent"
         android:layout_height="0dp"

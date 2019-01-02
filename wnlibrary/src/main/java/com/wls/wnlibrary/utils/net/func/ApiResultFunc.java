@@ -24,8 +24,6 @@ import okhttp3.ResponseBody;
 
 /**
  * <p>描述：定义了ApiResult结果转换Func</p>
- * 作者： zhouyou<br>
- * 日期： 2017/3/15 16:52 <br>
  * 版本： v1.0<br>
  */
 @SuppressWarnings("unchecked")
@@ -57,14 +55,7 @@ public class ApiResultFunc<T> implements Function<ResponseBody, ApiResult<T>> {
                     if (!List.class.isAssignableFrom(rawType) && clazz.equals(String.class)) {
                         apiResult.setData((T) json);
                         apiResult.setCode(0);
-                       /* final Type type = AppUtils.getType(cls, 0);
-                        ApiResult result = gson.fromJson(json, type);
-                        if (result != null) {
-                            apiResult = result;
-                            apiResult.setData((T) json);
-                        } else {
-                            apiResult.setMsg("json is null");
-                        }*/
+
                     } else {
                         ApiResult result = gson.fromJson(json, type);
                         if (result != null) {

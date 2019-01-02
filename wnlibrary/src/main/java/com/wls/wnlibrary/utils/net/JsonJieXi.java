@@ -1,4 +1,4 @@
-package com.wls.wnlibrary.utils;
+package com.wls.wnlibrary.utils.net;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
